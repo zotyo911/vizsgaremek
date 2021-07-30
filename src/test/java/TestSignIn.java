@@ -1,4 +1,5 @@
 import login.SignIn;
+import main.Main;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,6 +7,13 @@ import org.openqa.selenium.By;
 import util.Util;
 
 public class TestSignIn {
+
+    @Test
+    public void TestProba() {
+        Util.getDriver();
+        Main.signUp();
+    }
+    
 
     @Test
     public void TestRegistrationNoEmailAddress() {
