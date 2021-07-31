@@ -1,67 +1,60 @@
-
-import pages.SignInPageObjects;
+import org.junit.jupiter.api.*;
+import org.openqa.selenium.By;
 import pages.MainPageObjects;
 import pages.NewAccountPageObjects;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
+import pages.SignInPageObjects;
 import util.Util;
+import org.junit.jupiter.api.Order;
 
 public class TestSignIn {
 
-    @Test
-    public void TestRegistrationNoEmailAddress() {
-        MainPageObjects.clickSignInButton();
-        NewAccountPageObjects.clickNewAccountPageButton();
-        SignInPageObjects.registrationNoEmailAddress();
-
-        Assertions.assertEquals("There was a problem", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/h4")).getText());
+    @BeforeEach
+    public void setup(){
+        Util.getDriver();
     }
 
     @Test
-    public void TestRegistrationNoName() {
+    @DisplayName("BE-01")
+    @Order(1)
+    public void TestSignInEmptyNameInputField(){
         MainPageObjects.clickSignInButton();
-        NewAccountPageObjects.clickNewAccountPageButton();
-        SignInPageObjects.registrationNoName();
+        NewAccountPageObjects.clickSignInWithIMDbButton();
+        SignInPageObjects.signInEmptyNameInputField();
 
-        Assertions.assertEquals("Enter your name", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/div/ul/li/span")).getText());
+        Assertions.assertEquals("Enter your email or mobile phone number", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-email-missing-alert\"]/div/div")).getText());
     }
 
     @Test
-    public void TestRegistrationNoPassword() {
+    @DisplayName("BE-02")
+    @Order(2)
+    public void TestSignInEmptyPasswordField(){
         MainPageObjects.clickSignInButton();
-        NewAccountPageObjects.clickNewAccountPageButton();
-        SignInPageObjects.registrationNoPassword();
+        NewAccountPageObjects.clickSignInWithIMDbButton();
+        SignInPageObjects.signInEmptyPasswordField();
 
-        Assertions.assertEquals("Enter your password", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/div/ul/li/span")).getText());
+        Assertions.assertEquals("Enter your password", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-password-missing-alert\"]/div/div")).getText());
     }
 
     @Test
-    public void TestRegistrationNotValidPassword() {
+    @DisplayName("BE-03")
+    @Order(3)
+    public void TestSignInWrongPassword(){
         MainPageObjects.clickSignInButton();
-        NewAccountPageObjects.clickNewAccountPageButton();
-        SignInPageObjects.registrationNotValidPassword();
+        NewAccountPageObjects.clickSignInWithIMDbButton();
+        SignInPageObjects.signInWrongPassword();
 
-        Assertions.assertEquals("There was a problem", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/h4")).getText());
+        Assertions.assertEquals("Your password is incorrect", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/div/ul/li/span")).getText());
     }
 
     @Test
-    public void TestRegistrationNoMatchPassword() {
+    @DisplayName("BE-04")
+    @Order(4)
+    public void TestSignIn(){
         MainPageObjects.clickSignInButton();
-        NewAccountPageObjects.clickNewAccountPageButton();
-        SignInPageObjects.registrationNoMatchPassword();
+        NewAccountPageObjects.clickSignInWithIMDbButton();
+        SignInPageObjects.signIn();
 
-        Assertions.assertEquals("Passwords must match", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/div/ul/li/span")).getText());
-    }
-
-    @Test
-    public void TestRegistration(){
-        MainPageObjects.clickSignInButton();
-        NewAccountPageObjects.clickNewAccountPageButton();
-        SignInPageObjects.registration();
-
-        Assertions.assertEquals("Enter the characters above", Util.getDriver().findElement(By.xpath("//*/div[1]/label")).getText());
+        Assertions.assertEquals("Soós", Util.getDriver().findElement(By.xpath("//*[@id=\"imdbHeader\"]/div[2]/div[5]/div/label[2]/div/span")).getText());
     }
 
     @AfterEach
