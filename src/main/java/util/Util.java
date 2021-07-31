@@ -16,8 +16,6 @@ public class Util {
         if (driver == null) {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments(new String[]{"--no-sandbox"});
-        options.addArguments(new String[]{"--disable-dev-shm-usage"});
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
         driver.manage().window().maximize();
