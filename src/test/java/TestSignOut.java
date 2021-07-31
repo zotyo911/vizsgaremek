@@ -14,7 +14,8 @@ public class TestSignOut {
     }
 
     @Test
-    public void TestSignOut(){
+    @DisplayName("LO-01")
+    public void TestCompleteSignOut(){
         MainPageObjects.clickSignInButton();
         NewAccountPageObjects.clickSignInWithIMDbButton();
         SignInPageObjects.signIn();
