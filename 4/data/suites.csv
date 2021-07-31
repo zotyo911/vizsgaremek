@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sat Jul 31 07:42:53 GMT 2021","Sat Jul 31 07:42:53 GMT 2021","6","","TestSignIn","","TestSignIn","TestRegistrationNoMatchPassword","TestRegistrationNoMatchPassword()",""
+"broken","Sat Jul 31 07:42:53 GMT 2021","Sat Jul 31 07:42:53 GMT 2021","78","","TestSignIn","","TestSignIn","TestRegistrationNotValidPassword","TestRegistrationNotValidPassword()",""
+"broken","Sat Jul 31 07:42:53 GMT 2021","Sat Jul 31 07:42:53 GMT 2021","2","","TestSignIn","","TestSignIn","TestProba","TestProba()",""
+"broken","Sat Jul 31 07:42:53 GMT 2021","Sat Jul 31 07:42:53 GMT 2021","7","","TestSignIn","","TestSignIn","TestRegistrationNoPassword","TestRegistrationNoPassword()",""
+"broken","Sat Jul 31 07:42:53 GMT 2021","Sat Jul 31 07:42:53 GMT 2021","7","","TestSignIn","","TestSignIn","TestRegistrationNoEmailAddress","TestRegistrationNoEmailAddress()",""
+"broken","Sat Jul 31 07:42:53 GMT 2021","Sat Jul 31 07:42:53 GMT 2021","4","","TestSignIn","","TestSignIn","TestRegistrationNoName","TestRegistrationNoName()",""
+"broken","Sat Jul 31 07:42:53 GMT 2021","Sat Jul 31 07:42:53 GMT 2021","3","","TestSignIn","","TestSignIn","TestRegistration","TestRegistration()",""

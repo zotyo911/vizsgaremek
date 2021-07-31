@@ -1,0 +1,104 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "The driver is not executable: /home/runner/work/vizsgaremek/vizsgaremek/resources/chromedriver.exe",
+      "children" : [ {
+        "name" : "TestRegistrationNotValidPassword()",
+        "uid" : "3620240635130645",
+        "parentUid" : "b6a4c4978dcabac147f3483e40d57487",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627717373098,
+          "stop" : 1627717373176,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestRegistration()",
+        "uid" : "2949579d8bcf949d",
+        "parentUid" : "b6a4c4978dcabac147f3483e40d57487",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627717373263,
+          "stop" : 1627717373266,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestRegistrationNoName()",
+        "uid" : "5a99b39eff9efaa6",
+        "parentUid" : "b6a4c4978dcabac147f3483e40d57487",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627717373270,
+          "stop" : 1627717373274,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestRegistrationNoPassword()",
+        "uid" : "efc66fdce4acb330",
+        "parentUid" : "b6a4c4978dcabac147f3483e40d57487",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627717373278,
+          "stop" : 1627717373285,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestRegistrationNoEmailAddress()",
+        "uid" : "688036c1cdac43a8",
+        "parentUid" : "b6a4c4978dcabac147f3483e40d57487",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627717373290,
+          "stop" : 1627717373297,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestProba()",
+        "uid" : "a4b5e952b5e89f07",
+        "parentUid" : "b6a4c4978dcabac147f3483e40d57487",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627717373307,
+          "stop" : 1627717373309,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestRegistrationNoMatchPassword()",
+        "uid" : "ce1243c072ccfbfa",
+        "parentUid" : "b6a4c4978dcabac147f3483e40d57487",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627717373318,
+          "stop" : 1627717373324,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b6a4c4978dcabac147f3483e40d57487"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
