@@ -1,5 +1,7 @@
-import login.SignIn;
-import main.Main;
+
+import pages.SignInPageObjects;
+import pages.MainPageObjects;
+import pages.NewAccountPageObjects;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -9,56 +11,55 @@ import util.Util;
 public class TestSignIn {
 
     @Test
-    public void TestProba() {
-        Util.getDriver();
-        Main.signUp();
-    }
-
-
-    @Test
     public void TestRegistrationNoEmailAddress() {
-        Util.getDriver();
-        SignIn.registrationNoEmailAddress();
+        MainPageObjects.clickSignInButton();
+        NewAccountPageObjects.clickNewAccountPageButton();
+        SignInPageObjects.registrationNoEmailAddress();
 
         Assertions.assertEquals("There was a problem", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/h4")).getText());
     }
 
     @Test
     public void TestRegistrationNoName() {
-        Util.getDriver();
-        SignIn.registrationNoName();
+        MainPageObjects.clickSignInButton();
+        NewAccountPageObjects.clickNewAccountPageButton();
+        SignInPageObjects.registrationNoName();
 
         Assertions.assertEquals("Enter your name", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/div/ul/li/span")).getText());
     }
 
     @Test
     public void TestRegistrationNoPassword() {
-        Util.getDriver();
-        SignIn.registrationNoPassword();
+        MainPageObjects.clickSignInButton();
+        NewAccountPageObjects.clickNewAccountPageButton();
+        SignInPageObjects.registrationNoPassword();
 
         Assertions.assertEquals("Enter your password", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/div/ul/li/span")).getText());
     }
 
     @Test
     public void TestRegistrationNotValidPassword() {
-        Util.getDriver();
-        SignIn.registrationNotValidPassword();
+        MainPageObjects.clickSignInButton();
+        NewAccountPageObjects.clickNewAccountPageButton();
+        SignInPageObjects.registrationNotValidPassword();
 
         Assertions.assertEquals("There was a problem", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/h4")).getText());
     }
 
     @Test
     public void TestRegistrationNoMatchPassword() {
-        Util.getDriver();
-        SignIn.registrationNoMatchPassword();
+        MainPageObjects.clickSignInButton();
+        NewAccountPageObjects.clickNewAccountPageButton();
+        SignInPageObjects.registrationNoMatchPassword();
 
         Assertions.assertEquals("Passwords must match", Util.getDriver().findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/div/ul/li/span")).getText());
     }
 
     @Test
     public void TestRegistration(){
-        Util.getDriver();
-        SignIn.registration();
+        MainPageObjects.clickSignInButton();
+        NewAccountPageObjects.clickNewAccountPageButton();
+        SignInPageObjects.registration();
 
         Assertions.assertEquals("Enter the characters above", Util.getDriver().findElement(By.xpath("//*/div[1]/label")).getText());
     }

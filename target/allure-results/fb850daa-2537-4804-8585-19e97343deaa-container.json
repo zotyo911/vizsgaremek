@@ -1,0 +1,1 @@
+{"uuid":"fb850daa-2537-4804-8585-19e97343deaa","name":"TestRegistrationNoEmailAddress()","children":["ce9f2c52-3c16-4b65-bada-dae2fa4565b6"],"befores":[],"afters":[{"name":"driverClose","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1627720410910,"stop":1627720411636}],"links":[],"start":1627720400013,"stop":1627720411943}
