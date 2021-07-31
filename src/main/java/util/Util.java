@@ -1,7 +1,9 @@
 package util;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,11 +14,14 @@ public class Util {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.get(URL);
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments(new String[]{"--no-sandbox"});
+        options.addArguments(new String[]{"--disable-dev-shm-usage"});
+        driver = new ChromeDriver(options);
+        driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.get(URL);
         }
         return driver;
     }
