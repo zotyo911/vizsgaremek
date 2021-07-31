@@ -25,6 +25,6 @@ public class Util {
     }
 
     public static void closeDriver(){
-        driver.close();
+        driver.quit();
     }
 }
