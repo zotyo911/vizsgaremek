@@ -1,0 +1,61 @@
+[ {
+  "uid" : "11c965ce67f7fb9e",
+  "name" : "TestRegistrationNoName()",
+  "time" : {
+    "start" : 1627721303358,
+    "stop" : 1627721303360,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4ae2d7ec2e817e9f",
+  "name" : "TestRegistration()",
+  "time" : {
+    "start" : 1627721303351,
+    "stop" : 1627721303354,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "47f4a007f5bda178",
+  "name" : "TestRegistrationNoMatchPassword()",
+  "time" : {
+    "start" : 1627721303381,
+    "stop" : 1627721303382,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4bdf9158c55b3ccb",
+  "name" : "TestRegistrationNotValidPassword()",
+  "time" : {
+    "start" : 1627721303197,
+    "stop" : 1627721303279,
+    "duration" : 82
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8350606178c2163c",
+  "name" : "TestRegistrationNoEmailAddress()",
+  "time" : {
+    "start" : 1627721303375,
+    "stop" : 1627721303377,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2335b52837f0339d",
+  "name" : "TestRegistrationNoPassword()",
+  "time" : {
+    "start" : 1627721303368,
+    "stop" : 1627721303371,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
