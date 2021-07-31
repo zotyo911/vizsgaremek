@@ -13,7 +13,7 @@ public class TestSignIn {
         Util.getDriver();
         Main.signUp();
     }
-    
+
 
     @Test
     public void TestRegistrationNoEmailAddress() {
