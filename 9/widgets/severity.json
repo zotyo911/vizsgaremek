@@ -1,0 +1,111 @@
+[ {
+  "uid" : "c3363d7d5f3cdf83",
+  "name" : "RI-05",
+  "time" : {
+    "start" : 1627736746395,
+    "stop" : 1627736746397,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e517bed1b64e38e",
+  "name" : "RI-03",
+  "time" : {
+    "start" : 1627736746368,
+    "stop" : 1627736746376,
+    "duration" : 8
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4d0e7fc6f7432d84",
+  "name" : "BE-01",
+  "time" : {
+    "start" : 1627736746426,
+    "stop" : 1627736746432,
+    "duration" : 6
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2872375d63f0bfb4",
+  "name" : "LO-01",
+  "time" : {
+    "start" : 1627736746166,
+    "stop" : 1627736746225,
+    "duration" : 59
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "62fb4006e40819fc",
+  "name" : "RI-02",
+  "time" : {
+    "start" : 1627736746329,
+    "stop" : 1627736746336,
+    "duration" : 7
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7a59cd1dd76c796b",
+  "name" : "RI-01",
+  "time" : {
+    "start" : 1627736746380,
+    "stop" : 1627736746389,
+    "duration" : 9
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8c5aa450ecebea2d",
+  "name" : "BE-02",
+  "time" : {
+    "start" : 1627736746422,
+    "stop" : 1627736746423,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "16bda7540b5d3a6c",
+  "name" : "RI-04",
+  "time" : {
+    "start" : 1627736746305,
+    "stop" : 1627736746317,
+    "duration" : 12
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5ef87f7343ed70ba",
+  "name" : "BE-04",
+  "time" : {
+    "start" : 1627736746410,
+    "stop" : 1627736746412,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e33cd718ccd6ba35",
+  "name" : "RI-06",
+  "time" : {
+    "start" : 1627736746360,
+    "stop" : 1627736746362,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "41f5bb5b92ea02f3",
+  "name" : "BE-03",
+  "time" : {
+    "start" : 1627736746435,
+    "stop" : 1627736746437,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
