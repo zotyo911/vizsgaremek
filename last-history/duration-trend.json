@@ -1,24 +1,3 @@
 [ {
-  "buildOrder" : 6,
-  "reportUrl" : "https://zotyo911.github.io/vizsgaremek/6/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 486
-  }
-}, {
-  "buildOrder" : 5,
-  "reportUrl" : "https://zotyo911.github.io/vizsgaremek/5/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 185
-  }
-}, {
-  "buildOrder" : 4,
-  "reportUrl" : "https://zotyo911.github.io/vizsgaremek/4/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 226
-  }
-}, {
   "data" : { }
 } ]
